@@ -1,0 +1,13 @@
+@use 'src/styles/vars.module.scss' as vars;
+
+.tile {
+  &:not(.visible) {
+    display: none;
+  }
+}
+
+.section {
+  &:not(:has(.visible)) {
+    display: none;
+  }
+}
